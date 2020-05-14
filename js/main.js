@@ -1,10 +1,7 @@
-var start = '{"favColor":"Orange", "favSeason":"Fall"}';
-
-var myObject = JSON.parse(start);
-console.log(myObject);
-
-var myString = JSON.stringify(myObject);
-console.log(myString);
-
-var myObject = JSON.parse(myString);
-console.log(myObject);
+//Single Level JSON Data
+ var theDatal = '{"first":"Paul", "last":"Cheney", "city":"Salem"}';
+ var myObj = JSON.parse(theDatal);
+ console.log(myObj);
+ 
+//  document.getElementById('message').innerHTML = myObj.last;
+ document.getElementById('message').innerHTML = myObj.city;
