@@ -1,7 +1,6 @@
-//Single Level JSON Data
- var theDatal = '{"first":"Paul", "last":"Cheney", "city":"Salem"}';
- var myObj = JSON.parse(theDatal);
- console.log(myObj);
- 
-//  document.getElementById('message').innerHTML = myObj.last;
- document.getElementById('message').innerHTML = myObj.city;
+var theData2 = '{"Jane":{"age":"29", "degree":"MFA"}, "Jim":{"age":"49", "degree":"MA"}}';
+var myObj = JSON.parse(theData2);
+console.log(myObj);
+
+// document.getElementById('message').innerHTML = myObj.Jim.age;
+document.getElementById('message').innerHTML = myObj.Jane.age;
